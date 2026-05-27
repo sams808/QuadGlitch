@@ -1,0 +1,22 @@
+# Python environment
+.venv/
+__pycache__/
+*.pyc
+
+# Generated media
+output/
+captures/
+
+# Logs
+logs/*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Local secrets/config
+.env
+
+# OS junk
+.DS_Store
+Thumbs.db
