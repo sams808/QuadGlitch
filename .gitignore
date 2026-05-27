@@ -3,12 +3,18 @@
 __pycache__/
 *.pyc
 
-# Generated media
-output/
+# Generated media / runtime outputs
+output/*
+!output/.gitkeep
+
 captures/
 
-# Logs
-logs/*.log
+logs/*
+!logs/.gitkeep
+
+# Input files can be local test material
+input/*
+!input/.gitkeep
 
 # Temporary files
 *.tmp
@@ -20,7 +26,3 @@ logs/*.log
 # OS junk
 .DS_Store
 Thumbs.db
-
-# Runtime logs
-logs/*
-!logs/.gitkeep
