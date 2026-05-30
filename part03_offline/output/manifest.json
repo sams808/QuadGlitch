@@ -1,0 +1,78 @@
+{
+  "project": "QuadGlitch",
+  "part": "part03_offline_wiggle_glitch_engine",
+  "created_at": "2026-05-29T18:34:51",
+  "python_version": "3.13.5",
+  "input_files": [
+    "/home/sami/QuadGlitch/part03_offline/input/view_0.png",
+    "/home/sami/QuadGlitch/part03_offline/input/view_1.png",
+    "/home/sami/QuadGlitch/part03_offline/input/view_2.png",
+    "/home/sami/QuadGlitch/part03_offline/input/view_3.png"
+  ],
+  "output_files": [
+    "/home/sami/QuadGlitch/part03_offline/output/clean_wiggle.gif",
+    "/home/sami/QuadGlitch/part03_offline/output/glitch_wiggle.gif",
+    "/home/sami/QuadGlitch/part03_offline/output/glitch_preview.png",
+    "/home/sami/QuadGlitch/part03_offline/output/clean_wiggle.mp4",
+    "/home/sami/QuadGlitch/part03_offline/output/glitch_wiggle.mp4"
+  ],
+  "parameters": {
+    "software_version": "0.1.0",
+    "seed": 123456,
+    "target_width": 960,
+    "target_height": 540,
+    "clean_view_order": [
+      0,
+      1,
+      2,
+      3,
+      2,
+      1
+    ],
+    "cycles": 5,
+    "fps": 8,
+    "effects": {
+      "view_order_scramble": {
+        "enabled": true
+      },
+      "rgb_shift": {
+        "enabled": true,
+        "red_dx": 8,
+        "red_dy": 0,
+        "blue_dx": -8,
+        "blue_dy": 0
+      },
+      "slice_tear": {
+        "enabled": true,
+        "slice_height": 18,
+        "max_offset": 140,
+        "probability": 0.75
+      },
+      "scanlines": {
+        "enabled": true,
+        "spacing": 3,
+        "darkness": 0.28
+      },
+      "macroblock_glitch": {
+        "enabled": true,
+        "block_size": 32,
+        "probability": 0.075,
+        "max_offset": 110
+      },
+      "palette_shift": {
+        "enabled": true,
+        "hue_shift": 18,
+        "saturation": 1.35,
+        "contrast": 1.12
+      }
+    },
+    "actual_glitch_view_order": [
+      3,
+      1,
+      2,
+      1,
+      0,
+      2
+    ]
+  }
+}
